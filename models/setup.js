@@ -2,7 +2,8 @@
 
 const inquirer = require('inquirer');
 const chalk = require('chalk');
-const dbInstance = require('.');
+const dbInstance = require('./');
+const seeders = require('./setup.seeders');
 
 const prompt = inquirer.createPromptModule();
 
@@ -20,6 +21,7 @@ async function setup() {
     }
 
     const db = await dbInstance(true).catch(handleFatalError);
+    await seeders.seedCategories(db.categoryModel);
     console.log('Success');
     process.exit(0);
 }

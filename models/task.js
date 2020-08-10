@@ -14,6 +14,11 @@ module.exports = function setupTaskModel(config) {
             type: Sequelize.DATEONLY,
             allowNull: false
         },
+        status: {
+            type: Sequelize.BOOLEAN,
+            allowNull: true,
+            defaultValue: false
+        },
         userId: {
             type: Sequelize.INTEGER,
             allowNull: false,
