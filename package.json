@@ -1,0 +1,39 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "Project for academic purposes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ysparky/todo-backend.git"
+  },
+  "keywords": [
+    "todoapp"
+  ],
+  "author": "Jose Caldas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ysparky/todo-backend/issues"
+  },
+  "homepage": "https://github.com/Ysparky/todo-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "nodemon": "^2.0.4"
+  }
+}
